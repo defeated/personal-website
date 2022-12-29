@@ -16,14 +16,22 @@ const { title } = Astro.props;
   <head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<title>title</title>
+		<title>{title}</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      if(localStorage.theme == "dark") {
+        document.documentElement.classList.add("dark")
+      }
+      else {
+        document.documentElement.classList.remove("dark")
+      }
+    </script>
 	</head>
 	<body
-    class="h-full bg-black/95 sm:mx-8">
+    class="h-full bg-zinc-50 dark:bg-black/95 sm:mx-8">
 
     <main
-      class="min-h-full max-w-6xl bg-zinc-900 ring-1 ring-zinc-300/20 mx-auto pt-6 px-12 sm:px-24">
+      class="min-h-full max-w-6xl bg-white dark:bg-zinc-900 ring-1 ring-zinc-100 dark:ring-zinc-300/20 mx-auto pt-6 px-12 sm:px-24">
 
       <Header />
 
