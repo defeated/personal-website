@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+exec docker run --rm -it \
+  --workdir /app \
+  --volume $(pwd):/app \
+  --user node \
+  --env NODE_OPTIONS=--no-experimental-fetch \
+  --publish 3000:3000 \
+  --init \
+  node:19-alpine npx astro "$@"
