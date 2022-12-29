@@ -1,0 +1,55 @@
+---
+import { MoonIcon } from "@heroicons/vue/24/solid";
+import { Image } from "@astrojs/image/components";
+---
+
+<header
+  class="flex gap-4 pb-10 lg:pb-16">
+
+  <div class="flex flex-1">
+    <a href="/"
+      class="h-10 w-10 rounded-full shadow-lg backdrop-blur p-0.5 shadow-zinc-800/5 ring-1 ring-white/10 bg-zinc-800/90">
+
+      <Image src={import("../assets/headshot.jpg")} width={800} height={800} alt="headshot"
+        class="rounded-full h-9 w-9 bg-zinc-900" />
+    </a>
+  </div>
+
+  <nav
+    class="flex flex-1 justify-center">
+
+    <menu
+      class="flex rounded-full px-3 text-sm font-medium shadow-lg shadow-zinc-800/5 backdrop-blur bg-zinc-800/90 text-zinc-200 ring-1 ring-white/10">
+
+      <li>
+        <a href="/" class="relative block px-3 py-2.5 transition text-fuchsia-400
+          after:absolute after:inset-x-1 after:-bottom-px after:h-px after:bg-gradient-to-r after:from-fuchsia-400/0 after:via-fuchsia-400/60 after:to-fuchsia-400/0">
+          About
+        </a>
+      </li>
+      <li>
+        <a href="/writing"
+          class="block px-3 py-2.5 transition hover:text-fuchsia-400">
+          Writing
+        </a>
+      </li>
+      <li>
+        <a href="/projects"
+          class="block px-3 py-2.5 transition hover:text-fuchsia-400">
+          Projects
+        </a>
+      </li>
+    </menu>
+  </nav>
+
+  <div
+    class="flex flex-1 justify-end">
+
+    <button type="button" aria-label="Toggle dark mode"
+      class="group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20">
+
+      <MoonIcon
+        class="h-5 w-5 fill-zinc-700 stroke-zinc-500 transition dark:block" />
+    </button>
+  </div>
+</header>
