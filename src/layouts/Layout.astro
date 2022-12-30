@@ -18,6 +18,17 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<title>{title}</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+    <style>
+      :root { font-family: 'Inter', sans-serif; }
+      @supports (font-variation-settings: normal) {
+        :root { font-family: 'Inter var', sans-serif; }
+      }
+    </style>
+
     <script>
       const html = document.documentElement.classList;
       (localStorage.theme == "dark") ? html.add("dark") : html.remove("dark");
