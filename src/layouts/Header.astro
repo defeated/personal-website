@@ -1,6 +1,9 @@
 ---
 import { Image } from "@astrojs/image/components";
 import DarkToggle from "../components/DarkToggle.astro";
+import Nav from "../components/Nav.vue";
+
+const current = new URL(Astro.request.url).pathname;
 ---
 
 <header
@@ -18,28 +21,7 @@ import DarkToggle from "../components/DarkToggle.astro";
   <nav
     class="flex flex-1 justify-center">
 
-    <menu
-      class="flex rounded-full px-3 text-sm font-medium shadow-lg shadow-zinc-800/5 backdrop-blur bg-white/90 dark:bg-zinc-800/90 text-zinc-800 dark:text-zinc-200 ring-1 ring-zinc-900/5 dark:ring-white/10">
-
-      <li>
-        <a href="/" class="relative block px-3 py-2.5 transition text-fuchsia-400
-          after:absolute after:inset-x-1 after:-bottom-px after:h-px after:bg-gradient-to-r after:from-fuchsia-400/0 after:via-fuchsia-400/60 after:to-fuchsia-400/0">
-          About
-        </a>
-      </li>
-      <li>
-        <a href="/writing"
-          class="block px-3 py-2.5 transition hover:text-fuchsia-400">
-          Writing
-        </a>
-      </li>
-      <li>
-        <a href="/projects"
-          class="block px-3 py-2.5 transition hover:text-fuchsia-400">
-          Projects
-        </a>
-      </li>
-    </menu>
+    <Nav current={current} />
   </nav>
 
   <div
