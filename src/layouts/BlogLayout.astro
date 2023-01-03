@@ -1,0 +1,44 @@
+---
+import Layout from "./Layout.astro";
+
+const {
+	content: { title, description, pubDate, image },
+} = Astro.props;
+---
+
+<Layout title={title}>
+
+  <article
+    class="relative w-full prose prose-zinc max-w-3xl dark:prose-invert mx-auto">
+
+    <a href="/blog" aria-label="Go back to articles"
+      class="absolute -mt-2 lg:-ml-16 xl:-ml-24 flex no-underline h-10 w-10 justify-center items-center rounded-full bg-zinc-50 shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 transition dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0 dark:ring-white/10 dark:hover:border-zinc-700 dark:hover:ring-white/20 text-zinc-200 dark:text-zinc-600">
+      &larr;
+    </a>
+
+    <header
+      class="flex flex-col">
+
+      <h1
+        class="font-black text-4xl leading-10 lg:text-5xl lg:leading-tight tracking-tight text-zinc-800 dark:text-zinc-100">
+
+        {title}
+      </h1>
+
+      <time datetime={new Date(pubDate).toISOString()}
+        class="ml-14 lg:ml-0 mb-6 order-first flex items-center text-base text-zinc-400 dark:text-zinc-500">
+
+        <span
+          class="h-4 w-0.5 mr-3 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
+
+        {pubDate}
+      </time>
+    </header>
+
+    <img src={image.url} alt={image.alt}
+      class="mb-20 rotate-3 rounded-xl object-cover bg-zinc-800 ring-1 ring-zinc-300 dark:ring-white/10" />
+
+    <slot />
+
+  </article>
+</Layout>
