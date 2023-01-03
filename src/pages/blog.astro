@@ -1,0 +1,31 @@
+---
+import Layout from "../layouts/Layout.astro";
+import BlogArchive from "../components/BlogArchive.vue";
+
+const posts = await Astro.glob("./blog/*.md")
+---
+
+<Layout title="Writing | 👋 Hi, I'm Eddie!">
+
+  <div
+    class="max-w-2xl">
+
+    <h1
+      class="font-black text-4xl leading-10 lg:text-5xl lg:leading-tight tracking-tight text-zinc-800 dark:text-zinc-100">
+
+      Writing about people, process and technology.
+    </h1>
+
+    <p
+      class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+
+      Thoughts on a career building software and software teams. From
+      playing senior roles on "both ends of the horse" (frontend & backend),
+      to mentoring and coaching engineers, to managing a portfolio of products &
+      teams.
+    </p>
+  </div>
+
+  <BlogArchive posts={posts} />
+
+</Layout>

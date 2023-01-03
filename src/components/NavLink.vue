@@ -13,7 +13,7 @@
 
 <script lang="ts" setup>
 const props = defineProps<{
-  current: String,
+  current: string,
   link: { path: string, text: string },
 }>()
 
