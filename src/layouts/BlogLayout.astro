@@ -21,20 +21,20 @@ const fullTitle = `${title} by Eddie Cianci`
     <header
       class="flex flex-col">
 
-      <h1
-        class="font-black text-4xl leading-10 lg:text-5xl lg:leading-tight tracking-tight text-zinc-800 dark:text-zinc-100">
-
-        {title}
-      </h1>
-
       <time datetime={new Date(pubDate).toISOString()}
-        class="ml-14 lg:ml-0 mb-6 order-first flex items-center text-base text-zinc-400 dark:text-zinc-500">
+        class="ml-14 lg:ml-0 mb-6 flex items-center text-base text-zinc-400 dark:text-zinc-500">
 
         <span
           class="h-4 w-0.5 mr-3 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
 
         {pubDate}
       </time>
+
+      <h1
+        class="font-black text-4xl leading-10 lg:text-5xl lg:leading-tight tracking-tight text-zinc-800 dark:text-zinc-100">
+
+        {title}
+      </h1>
     </header>
 
     <img src={image.url} alt={image.alt}

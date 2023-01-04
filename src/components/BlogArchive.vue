@@ -8,7 +8,7 @@
       </time>
 
       <a :href="post.url"
-        class="flex-1 rounded-md transition hover:sm:ring-[14px] hover:sm:ring-offset-[14px] hover:sm:ring-offset-transparent hover:sm:bg-zinc-100 hover:sm:ring-zinc-100 hover:sm:dark:bg-zinc-800/50 hover:sm:dark:ring-zinc-800/50">
+        class="flex-1 rounded-md transition hover:lg:ring-[14px] hover:lg:ring-offset-[14px] hover:lg:ring-offset-transparent hover:lg:bg-zinc-100 hover:lg:ring-zinc-100 hover:lg:dark:bg-zinc-800/50 hover:lg:dark:ring-zinc-800/50">
 
         <h2 class="font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
 
