@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://eddiecianci.info/sitemap-0.xml
