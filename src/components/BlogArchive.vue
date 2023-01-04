@@ -10,7 +10,7 @@
       <a :href="post.url"
         class="flex-1 rounded-md transition hover:sm:ring-[14px] hover:sm:ring-offset-[14px] hover:sm:ring-offset-transparent hover:sm:bg-zinc-100 hover:sm:ring-zinc-100 hover:sm:dark:bg-zinc-800/50 hover:sm:dark:ring-zinc-800/50">
 
-        <h2 class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+        <h2 class="font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
 
           {{ post.frontmatter.title }}
         </h2>
