@@ -4,9 +4,11 @@ import Layout from "./Layout.astro";
 const {
 	content: { title, description, pubDate, image },
 } = Astro.props;
+
+const fullTitle = `${title} by Eddie Cianci`
 ---
 
-<Layout title={title}>
+<Layout title={fullTitle}>
 
   <article
     class="relative w-full prose prose-zinc max-w-3xl dark:prose-invert mx-auto">
