@@ -10,6 +10,20 @@ const fullTitle = `${title} by Eddie Cianci`
 
 <Layout title={fullTitle}>
 
+  <meta slot="seo" name="description" content={description} />
+
+  <meta slot="seo" property="twitter:card" content="summary_large_image" />
+  <meta slot="seo" property="twitter:url" content={Astro.url} />
+  <meta slot="seo" property="twitter:title" content={title} />
+  <meta slot="seo" property="twitter:description" content={description} />
+  <meta slot="seo" property="twitter:image" content={new URL(image.url, Astro.url)} />
+
+  <meta slot="seo" property="og:type" content="website" />
+  <meta slot="seo" property="og:url" content={Astro.url} />
+  <meta slot="seo" property="og:title" content={title} />
+  <meta slot="seo" property="og:description" content={description} />
+  <meta slot="seo" property="og:image" content={new URL(image.url, Astro.url)} />
+
   <article
     class="relative w-full prose prose-zinc max-w-3xl dark:prose-invert mx-auto">
 

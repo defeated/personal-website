@@ -19,6 +19,7 @@ const { title } = Astro.props;
 		<title>{title}</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="/font/inter.var.css">
+    <slot name="seo" />
 	</head>
 	<body
     class="h-full transition bg-zinc-50 dark:bg-black/95 sm:mx-8">
