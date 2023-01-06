@@ -11,17 +11,14 @@
         class="flex-1 rounded-md transition hover:lg:ring-[14px] hover:lg:ring-offset-[14px] hover:lg:ring-offset-transparent hover:lg:bg-zinc-100 hover:lg:ring-zinc-100 hover:lg:dark:bg-zinc-800/50 hover:lg:dark:ring-zinc-800/50">
 
         <h2 class="font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-
           {{ post.frontmatter.title }}
         </h2>
 
         <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-
           {{ post.frontmatter.description }}
         </p>
 
         <span class="block mt-2 text-sm text-fuchsia-500 hover:text-fuchsia-400">
-
           Read post &rarr;
         </span>
       </a>
