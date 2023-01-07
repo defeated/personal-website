@@ -31,7 +31,7 @@ const socialImg = new URL(hero.src, Astro.url);
     <aside
       class="lg:w-1/2 lg:order-last lg:max-w-none max-w-sm self-center lg:self-start mt-5 mb-10">
 
-      <Image src={hero} width={720} height={720} alt="hero"
+      <Image src={hero} width={600} height={600} alt="hero" loading="eager" decoding="auto"
         class="aspect-square rotate-3 rounded-xl object-cover bg-zinc-800 ring-1 ring-zinc-300 dark:ring-white/10" />
 
       <menu role="list"
