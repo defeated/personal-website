@@ -1,5 +1,5 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import PageLayout from "../layouts/PageLayout.astro";
 import { Image } from "@astrojs/image/components";
 import { LinkIcon } from "@heroicons/vue/24/solid/index.js";
 
@@ -7,25 +7,7 @@ const title = "Things that keep me busy in my spare time.";
 const description = "I've started more projects and bought more domain names than I can count. (I'm a big fan of breakable toys!) Here are some that have persisted."
 ---
 
-<Layout title={title + " | Projects | 👋 Hi, I'm Eddie!"}>
-  <meta slot="seo" name="description" content={description} />
-
-  <div
-    class="max-w-2xl">
-
-    <h1
-      class="font-black text-4xl lg:text-5xl lg:leading-10 tracking-tight text-zinc-800 dark:text-zinc-100">
-
-      {title}
-    </h1>
-
-    <p
-      class="mt-6 text-zinc-600 dark:text-zinc-400">
-
-      {description}
-    </p>
-  </div>
-
+<PageLayout heading={title} title={title + " | Projects"} description={description}>
   <section
     class="mt-16 sm:mt-20 w-full">
 
@@ -59,5 +41,4 @@ const description = "I've started more projects and bought more domain names tha
     </a>
 
   </section>
-
-</Layout>
+</PageLayout>

@@ -1,5 +1,5 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import PageLayout from "../layouts/PageLayout.astro";
 import BlogArchive from "../components/BlogArchive.vue";
 
 const posts = await Astro.glob("./blog/*.md")
@@ -7,25 +7,6 @@ const title = "Writing about people, process and technology.";
 const description = "Thoughts on a career building software and software teams. From playing senior roles on 'both ends of the horse' (frontend & backend), to mentoring and coaching engineers, to managing a portfolio of products & teams."
 ---
 
-<Layout title={title + " | Writing | 👋 Hi, I'm Eddie!"}>
-  <meta slot="seo" name="description" content={description} />
-
-  <div
-    class="max-w-2xl">
-
-    <h1
-      class="font-black text-4xl lg:text-5xl lg:leading-10 tracking-tight text-zinc-800 dark:text-zinc-100">
-
-      {title}
-    </h1>
-
-    <p
-      class="mt-6 text-zinc-600 dark:text-zinc-400">
-
-      {description}
-    </p>
-  </div>
-
+<PageLayout heading={title} title={title + " | Writing"} description={description}>
   <BlogArchive posts={posts} />
-
-</Layout>
+</PageLayout>

@@ -1,0 +1,27 @@
+---
+import Layout from "./Layout.astro";
+
+const { title, description, heading } = Astro.props;
+---
+
+<Layout title={title + " | 👋 Hi, I'm Eddie!"}>
+  <meta slot="seo" name="description" content={description} />
+
+  <div
+    class="max-w-2xl">
+
+    <h1
+      class="font-black text-4xl lg:text-5xl lg:leading-10 tracking-tight text-zinc-800 dark:text-zinc-100">
+
+      {heading}
+    </h1>
+
+    <p
+      class="mt-6 text-zinc-600 dark:text-zinc-400">
+
+      {description}
+    </p>
+  </div>
+
+  <slot />
+</Layout>
