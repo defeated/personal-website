@@ -22,7 +22,7 @@ There's an anecdote about Henry Ford having a bank of phones he could use to cal
 
 Wandering around can help collect that subjective, qualitative data. The goal is to reconnect and gain a deeper understanding of the current state.
 
-### Going for a "walk".
+## Going for a "walk".
 
 If you're in an office, you could walk the factory floor, the sales loft, the production studio, the bullpen. Talk with people, share lunch with them, make conversation in the hallways & happy hours. Ask your ad-hoc questions.
 
