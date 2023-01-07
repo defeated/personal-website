@@ -3,7 +3,7 @@
 
     <article v-for="post in posts" class="flex flex-col lg:flex-row items-baseline">
       <time :datetime="pubDateTime(post)"
-        class="mb-3 lg:w-1/3 text-sm text-zinc-400 dark:text-zinc-500 border-l dark:border-zinc-700 border-zinc-200 pl-3 lg:pl-6">
+        class="mb-3 lg:w-1/3 text-sm text-zinc-500 dark:text-zinc-400/80 border-l dark:border-zinc-700 border-zinc-200 pl-3 lg:pl-6">
         {{ post.frontmatter.pubDate }}
       </time>
 
@@ -18,7 +18,8 @@
           {{ post.frontmatter.description }}
         </p>
 
-        <span class="block mt-2 text-sm text-fuchsia-500 hover:text-fuchsia-400">
+        <span
+          class="block mt-2 text-sm text-fuchsia-600 hover:text-fuchsia-400 dark:text-fuchsia-500 dark:hover:text-fuchsia-400">
           Read post &rarr;
         </span>
       </a>

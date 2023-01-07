@@ -1,7 +1,7 @@
 <template>
   <li>
-    <a :href="link.path" :class="{ 'text-fuchsia-400': isActive }"
-      class="relative block px-3 py-2.5 transition hover:text-fuchsia-400">
+    <a :href="link.path" :class="{ 'text-fuchsia-600 dark:text-fuchsia-400': isActive }"
+      class="relative block px-3 py-2.5 transition hover:text-fuchsia-600 dark:hover:text-fuchsia-400">
 
       {{ link.text }}
 
