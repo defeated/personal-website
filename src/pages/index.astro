@@ -2,9 +2,28 @@
 import Layout from "../layouts/Layout.astro";
 import { Image } from "@astrojs/image/components";
 import { SITE_EMAIL } from "../../config";
+import hero from "../assets/hero.jpg";
+
+const { title } = Astro.props;
+const description = "I build happy, inclusive, high-performing teams. Together we build products people love.";
+const socialImg = new URL(hero.src, Astro.url);
 ---
 
 <Layout title="👋 Hi, I'm Eddie!">
+
+  <meta slot="seo" name="description" content={description} />
+
+  <meta slot="seo" property="twitter:card" content="summary_large_image" />
+  <meta slot="seo" property="twitter:url" content={Astro.url} />
+  <meta slot="seo" property="twitter:title" content={title} />
+  <meta slot="seo" property="twitter:description" content={description} />
+  <meta slot="seo" property="twitter:image" content={socialImg} />
+
+  <meta slot="seo" property="og:type" content="website" />
+  <meta slot="seo" property="og:url" content={Astro.url} />
+  <meta slot="seo" property="og:title" content={title} />
+  <meta slot="seo" property="og:description" content={description} />
+  <meta slot="seo" property="og:image" content={socialImg} />
 
   <section
     class="flex flex-col lg:flex-row gap-x-16">
@@ -12,7 +31,7 @@ import { SITE_EMAIL } from "../../config";
     <aside
       class="lg:w-1/2 lg:order-last lg:max-w-none max-w-sm self-center lg:self-start mt-5 mb-10">
 
-      <Image src={import("../assets/hero.jpg")} width={720} height={720} alt="hero"
+      <Image src={hero} width={720} height={720} alt="hero"
         class="aspect-square rotate-3 rounded-xl object-cover bg-zinc-800 ring-1 ring-zinc-300 dark:ring-white/10" />
 
       <menu role="list"

@@ -16,13 +16,13 @@ const fullTitle = `${title} by Eddie Cianci`
   <meta slot="seo" property="twitter:url" content={Astro.url} />
   <meta slot="seo" property="twitter:title" content={title} />
   <meta slot="seo" property="twitter:description" content={description} />
-  <meta slot="seo" property="twitter:image" content={new URL(image.url, Astro.url)} />
+  <meta slot="seo" property="twitter:image" content={new URL(image.path, Astro.url)} />
 
   <meta slot="seo" property="og:type" content="website" />
   <meta slot="seo" property="og:url" content={Astro.url} />
   <meta slot="seo" property="og:title" content={title} />
   <meta slot="seo" property="og:description" content={description} />
-  <meta slot="seo" property="og:image" content={new URL(image.url, Astro.url)} />
+  <meta slot="seo" property="og:image" content={new URL(image.path, Astro.url)} />
 
   <article
     class="relative w-full prose prose-zinc max-w-3xl dark:prose-invert mx-auto">
@@ -48,7 +48,7 @@ const fullTitle = `${title} by Eddie Cianci`
       </h1>
     </header>
 
-    <img src={image.url} alt={image.alt}
+    <img src={image.path} alt={image.alt}
       class="mb-20 rotate-3 rounded-xl object-cover bg-zinc-800 ring-1 ring-zinc-300 dark:ring-white/10" />
 
     <slot />

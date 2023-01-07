@@ -4,7 +4,7 @@ title: "Management by Wandering Around (for Remote Leaders)"
 description: "Wandering around can help collect subjective, qualitative data. The goal is to reconnect and gain a deeper understanding of the current state."
 pubDate: 2021 November 28
 image:
-  url: "/blog/mbwa.jpg"
+  path: "/blog/mbwa.jpg"
   alt: "Illustration of people wandering around."
 ---
 
