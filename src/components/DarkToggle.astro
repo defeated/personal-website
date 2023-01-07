@@ -4,13 +4,13 @@ import { SunIcon } from "@heroicons/vue/24/outline/index.js";
 ---
 
 <button type="button" aria-label="Toggle dark mode" data-mode="toggle"
-  class="group rounded-full bg-zinc-50 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20">
+  class="group transition rounded-full bg-zinc-50 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20">
 
   <MoonIcon
-    class="h-5 w-5 stroke-zinc-500 transition hidden dark:block" />
+    class="h-5 w-5 stroke-zinc-500 hidden dark:block" />
 
   <SunIcon
-    class="h-5 w-5 stroke-amber-500 transition dark:hidden block" />
+    class="h-5 w-5 stroke-amber-500 dark:hidden block" />
 </button>
 
 <script>
