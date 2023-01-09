@@ -1,8 +1,8 @@
 <template>
-  <section class="mt-16 sm:mt-20 w-full">
+  <section class="flex flex-row flex-wrap gap-14 mt-16 sm:mt-20 w-full">
 
     <a v-for="project in projects" :href="'http://' + project.url" target="_blank" rel="noopener noreferrer"
-      class="max-w-sm flex flex-col gap-4 rounded-md transition hover:sm:ring-[14px] hover:sm:ring-offset-[14px] hover:sm:ring-offset-transparent hover:sm:bg-zinc-100 hover:sm:ring-zinc-100 hover:sm:dark:bg-zinc-800/50 hover:sm:dark:ring-zinc-800/50">
+      class="flex flex-col gap-4 flex-grow w-72 rounded-md transition hover:sm:ring-[14px] hover:sm:ring-offset-[14px] hover:sm:ring-offset-transparent hover:sm:bg-zinc-100 hover:sm:ring-zinc-100 hover:sm:dark:bg-zinc-800/50 hover:sm:dark:ring-zinc-800/50">
 
       <div
         class="flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
@@ -14,7 +14,7 @@
         {{ project.title }}
       </h2>
 
-      <p class="text-sm text-zinc-600 dark:text-zinc-400">
+      <p class="flex-grow text-sm text-zinc-600 dark:text-zinc-400">
         {{ project.description }}
       </p>
 
