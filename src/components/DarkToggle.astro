@@ -14,14 +14,10 @@ import { SunIcon } from "@heroicons/vue/24/outline/index.js";
 </button>
 
 <script>
-  const html = document.documentElement.classList;
-  (localStorage.theme == "dark") ? html.add("dark") : html.remove("dark");
+  (localStorage.theme == "dark") ? document.documentElement.classList.add("dark") : document.documentElement.classList.remove("dark");
 
-  function toggle() {
-    html.toggle('dark');
-    localStorage.theme = (html.contains('dark') ? 'dark' : '');
-  }
-
-  const button = document.querySelector("button[data-mode=toggle]")
-  button?.addEventListener("click", toggle)
+  document.querySelector("button[data-mode=toggle]")?.addEventListener("click", () => {
+    document.documentElement.classList.toggle('dark');
+    localStorage.theme = (document.documentElement.classList.contains('dark') ? 'dark' : '');
+  });
 </script>
