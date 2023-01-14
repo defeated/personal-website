@@ -29,7 +29,7 @@ const { title } = Astro.props;
       <Header />
 
       <div id="content"
-        class="transition-opacity opacity-0 duration-300 ease-in">
+        class="transition-opacity opacity-0 delay-75 duration-300 ease-in">
 
         <slot />
 
@@ -39,9 +39,9 @@ const { title } = Astro.props;
     </main>
 
     <script defer>
-      document.addEventListener("DOMContentLoaded", () => {
+      window.addEventListener("load", () => {
         document.getElementById("content")?.classList.remove("opacity-0");
-      })
+      });
     </script>
 
   </body>
