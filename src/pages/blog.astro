@@ -2,7 +2,11 @@
 import PageLayout from "../layouts/PageLayout.astro";
 import BlogArchive from "../components/BlogArchive.vue";
 
-const posts = await Astro.glob("./blog/*.md")
+// Use Astro.glob() to fetch all posts, and then sort them by date.
+const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
+	(a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
+);
+
 const title = "Writing about people, process and technology.";
 const description = "Thoughts on a career building software and software teams. From playing senior roles on 'both ends of the horse' (frontend & backend), to mentoring and coaching engineers, to managing a portfolio of products & teams."
 ---
