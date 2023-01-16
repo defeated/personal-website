@@ -1,9 +1,10 @@
 <template>
   <section class="mt-16 sm:mt-20 max-w-3xl">
 
-    <article v-for="post in posts" class="flex flex-col lg:flex-row items-baseline pb-14">
+    <article v-for="post in posts"
+      class="flex flex-col lg:flex-row items-baseline pb-14 lg:border-l lg:dark:border-zinc-700 lg:border-zinc-200">
       <time :datetime="pubDateTime(post)"
-        class="mb-3 lg:w-1/3 text-sm text-zinc-500 dark:text-zinc-400/80 border-l dark:border-zinc-700 border-zinc-200 pl-3 lg:pl-6">
+        class="mb-3 lg:w-1/3 text-sm text-zinc-500 dark:text-zinc-400/80 lg:border-0 border-l dark:border-zinc-700 border-zinc-200 pl-3 lg:pl-6">
         {{ post.frontmatter?.pubDate }}
       </time>
 
