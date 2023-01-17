@@ -72,7 +72,7 @@ ruby --yjit -v
 # => ruby 3.2.0 (2022-12-25 revision a528908271) +YJIT [x86_64-linux]
 ```
 
-You can also interogate the `RubyVM` object at runtime to see if YJIT is
+You can also interrogate the `RubyVM` object at runtime to see if YJIT is
 enabled:
 
 ```ruby
