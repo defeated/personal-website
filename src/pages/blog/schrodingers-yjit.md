@@ -95,12 +95,21 @@ Supported Rust versions have now been
 [merged](https://github.com/docker-library/official-images/pull/13886) into the
 official Docker Ruby images making YJIT supported in the following distros:
 
-  * Alpine 3.16 & 3.17
-  * Debian Buster
-  * Debian Bullseye
+  |OS|Image|
+  |---|---|
+  |Alpine 3.16|`ruby:3.2.0-alpine3.16`|
+  |Alpine 3.17|`ruby:3.2.0-alpine3.17`|
+  |Debian Buster|`ruby:3.2.0-buster`|
+  |Debian Buster (Slim)|`ruby:3.2.0-slim-buster`|
+  |Debian Bullseye|`ruby:3.2.0-bullseye`|
+  |Debian Bullseye (Slim)|`ruby:3.2.0-slim-bullseye`|
 
 I also learned recently that https://ruby-lang.org provide their own Docker
 images, which add support for YJIT to the following distros:
 
-  * Ubuntu Focal
-  * Ubuntu Jammy
+|OS|Image|
+|---|---|
+|Ubuntu Focal|`rubylang/ruby:3.2.0-dev-focal`|
+|Ubuntu Focal (Slim)|`rubylang/ruby:3.2.0-focal`|
+|Ubuntu Jammy|`rubylang/ruby:3.2.0-dev-jammy`|
+|Ubuntu Jammy (Slim)|`rubylang/ruby:3.2.0-jammy`|

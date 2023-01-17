@@ -14,7 +14,8 @@ article {
     @apply font-serif bg-zinc-100 dark:bg-zinc-800/90 py-0.5 px-4 !important;
   }
 
-  & > p > code {
+  & > p > code,
+  & td > code {
     @apply rounded border border-pink-300 bg-pink-200 text-pink-900 font-thin px-1 !important;
 
     &::before,
