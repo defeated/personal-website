@@ -8,5 +8,16 @@ import image from "@astrojs/image";
 
 export default defineConfig({
   site: "https://eddiecianci.info",
-  integrations: [tailwind(), vue(), sitemap(), image()]
+  integrations: [
+    tailwind(),
+    vue(),
+    sitemap(),
+    image()
+  ],
+  markdown: {
+    shikiConfig: {
+      theme: 'dracula',
+      wrap: true,
+    },
+  },
 });

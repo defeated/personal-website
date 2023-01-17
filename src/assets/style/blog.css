@@ -1,0 +1,25 @@
+article {
+  & > h1,
+  & > h2,
+  & > h3,
+  & > h4,
+  & > h5,
+  & > h6 {
+    & > a {
+      @apply no-underline !important;
+    }
+  }
+
+  & > blockquote {
+    @apply font-serif bg-zinc-100 dark:bg-zinc-800/90 py-0.5 px-4 !important;
+  }
+
+  & > p > code {
+    @apply rounded border border-pink-300 bg-pink-200 text-pink-900 font-thin px-1 !important;
+
+    &::before,
+    &::after {
+      @apply content-none !important;
+    }
+  }
+}
