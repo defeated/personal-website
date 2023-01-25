@@ -31,7 +31,7 @@
 </template>
 
 <script lang="ts" setup>
-import { LinkIcon } from "@heroicons/vue/24/solid/index.js";
+import { LinkIcon } from "@heroicons/vue/24/solid";
 
 const props = defineProps<{
   projects: {
