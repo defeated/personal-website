@@ -7,6 +7,7 @@ import sitemap from "@astrojs/sitemap";
 import image from "@astrojs/image";
 
 export default defineConfig({
+  trailingSlash: "always",
   site: "https://eddiecianci.info",
   integrations: [
     tailwind(),

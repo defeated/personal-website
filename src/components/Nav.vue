@@ -20,10 +20,10 @@ const links = [{
 },
 {
   text: "Writing",
-  path: "/blog",
+  path: "/blog/",
 },
 {
   text: "Projects",
-  path: "/projects",
+  path: "/projects/",
 }]
 </script>
