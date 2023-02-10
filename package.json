@@ -11,15 +11,15 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/image": "^0.14.0",
+    "@astrojs/image": "^0.14.1",
     "@astrojs/rss": "^2.1.0",
     "@astrojs/sitemap": "^1.0.1",
     "@astrojs/tailwind": "^3.0.1",
     "@astrojs/vue": "^2.0.1",
-    "@heroicons/vue": "^2.0.14",
+    "@heroicons/vue": "^2.0.15",
     "@tailwindcss/typography": "^0.5.9",
-    "astro": "^2.0.6",
-    "tailwindcss": "^3.2.4",
+    "astro": "^2.0.10",
+    "tailwindcss": "^3.2.6",
     "vue": "^3.2.47"
   }
 }
