@@ -17,5 +17,9 @@ const props = defineProps<{
   link: { path: string, text: string },
 }>()
 
-const isActive = props.current === props.link.path || props.current.startsWith(props.link.path + "/")
+console.log(props.current)
+console.log(props.link.path)
+
+const isActive = props.current === props.link.path ||
+  (props.current.startsWith(props.link.path) && props.link.path !== "/")
 </script>
